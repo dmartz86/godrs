@@ -1,0 +1,22 @@
+{
+  "name": "godrs",
+  "version": "1.0.0",
+  "description": "Game of Drones",
+  "main": "app.js",
+  "scripts": {
+    "start": "json-server -w true db.json",
+    "test": "mocha"
+  },
+  "author": "Daniel Martinez",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^0.8.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com:dmartz86/godrs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dmartz86/godrs/issues"
+  }
+}
