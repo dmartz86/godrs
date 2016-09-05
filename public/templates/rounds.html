@@ -1,0 +1,32 @@
+<div class="jumbotron col-xs-12 col-sm-12 col-md-6 col-lg-6 text-center">
+  <div ng-if="rc.status === 'playing'">
+    <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <h2>Round {{rc.round}}</h2>
+        <h3>Select move:</h3>
+      </div>
+      <h1 class="col-xs-6 col-sm-6 col-md-6 col-lg-6">{{rc.username}}</hº>
+    </div>
+    <div class="row">
+      <button class="btn btn-default btn-lg col-xs-4 col-sm-4 col-md-4 col-lg-4" 
+              ng-class="{'btn-primary': rc.isActive(item), 'btn-default': !rc.isActive(item)}"
+              ng-repeat="item in rc.moves track by $index"
+              ng-click="rc.setMove(item)">{{item.move}}</button>
+    </div>
+    <hr>
+    <div class="row">
+      <button class="btn btn-lg col-xs-8 col-xs-offset-2 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2"
+              ng-class="{'btn-success': rc.hasSelectedAMove(), 'btn-default': !rc.hasSelectedAMove()}"
+              ng-disabled="!rc.history[rc.round]"
+              ng-click="rc.confirmMove()">OK</button>
+    </div>
+  </div>
+  <div ng-if="rc.status === 'wonr'">
+    <h1>We have a WINNER!!</h1>
+    <h1>{{rc.winner}} is the new EMPEROR!</h1>
+  </div>
+  <div ng-if="rc.status === 'loose'">
+    <h1>Game over!!</h1>
+    <h1>{{rc.winner}} is the new EMPEROR!</h1>
+  </div>
+</div>

@@ -1,5 +1,4 @@
 {
-  "users": [],
   "moves": [
     {
       "move": "paper",
@@ -13,5 +12,8 @@
       "move": "scissors",
       "kills": "paper"
     }
+  ],
+  "users": [],
+  "history": [
   ]
 }

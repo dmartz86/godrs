@@ -4,13 +4,15 @@
   "description": "Game of Drones",
   "main": "app.js",
   "scripts": {
-    "start": "json-server -w true db.json",
+    "start": "node app",
     "test": "mocha"
   },
   "author": "Daniel Martinez",
   "license": "MIT",
   "dependencies": {
-    "json-server": "^0.8.19"
+    "express": "^4.14.0",
+    "json-server": "^0.8.19",
+    "socket.io": "^1.4.8"
   },
   "repository": {
     "type": "git",
