@@ -1,3 +1,4 @@
+[![Circle CI](https://circleci.com/gh/dmartz86/godrs.svg?style=svg)](https://circleci.com/gh/dmartz86/godrs)
 # godrs
 God of Drones
 
