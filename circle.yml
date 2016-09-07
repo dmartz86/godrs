@@ -3,3 +3,5 @@ machine:
     version: 6.5.0
   hosts:
     godrs: 127.0.0.1
+  post:
+    - npm install  mocha -g
