@@ -8,7 +8,10 @@ module.exports = {
         "__dirname": true,
         "require": true,
         "angular": true,
-        "Rx": true
+        "Rx": true,
+        "describe": true,
+        "it": true,
+        "module": true
     },
     "extends": "eslint:recommended",
     "parserOptions": {
